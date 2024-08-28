@@ -4,7 +4,7 @@ import { calculatorInputs } from '../lib/calculatorInputs'
 import { SunIcon, MoonIcon } from '@heroicons/react/24/solid';
 
 
-interface CalculatorProps {
+export interface CalculatorProps {
   themeMode: 'light' | 'dark';
   changeThemeMode: (themeMode: 'light' | 'dark') => void;
 };
@@ -21,6 +21,9 @@ const Calculator = (props: CalculatorProps) => {
 
   return (
     <div>
+      <div className="text-5xl text-center">
+        Calculator
+      </div>
       <div className="grid grid-cols-12 gap-4 m-6 h-16">
         <Button
           className="col-span-1 h-full"

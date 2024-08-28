@@ -14,10 +14,10 @@ const App = () => {
   const changeThemeMode = (themeMode: ThemeMode) => {
     setThemeMode(themeMode);
     localStorage.setItem('themeMode', themeMode);
-    const html = document.querySelector('html');
-    if (html) {
-      html.classList.remove('light', 'dark');
-      html.classList.add(themeMode);
+    const body = document.querySelector('body');
+    if (body) {
+      body.classList.remove('light', 'dark');
+      body.classList.add(themeMode);
     }
   };
 
